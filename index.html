@@ -23,7 +23,7 @@
                     <li><a href="#">Nuestros Productos</a></li>
                     <li><a href="#">Contactanos</a></li>
                 </ul>
-                <div class="mobile-menu-icon icono-menu" id="mobile-menu-trigger">
+                <div class="mobile-menu-icon icono-menu" id="menu-icon">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -32,7 +32,7 @@
         </div>
     </header>
 
-    <ul class="mobile-menu" id="mobile-menu-nav">
+    <ul class="mobile-menu" id="menu-nav">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Nuestros Productos</a></li>
@@ -80,10 +80,8 @@
 
     <script>
         $(document).ready(function(){
-            // Al hacer clic en el icono del sándwich (trigger)
-            $('#mobile-menu-trigger').on('click', function(){
-                // Muestra u oculta el menú (nav) con una animación de deslizamiento
-                $('#mobile-menu-nav').slideToggle();
+            $('#menu-icon').on('click', function(){
+                $('#menu-nav').slideToggle();
             });
         });
     </script>
